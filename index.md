@@ -4,8 +4,8 @@ layout: homepage
 keywords:
 
 # Hero section
-title: XTZ-Shots
-description: A repository of Tezos snapshots - regularly updated and fast to download from anywhere in the world.
+title: Polkashots
+description: A repository of Polkadot node snapshots - regularly updated and fast to download from anywhere in the world.
 buttons:
     - content: Learn more
       url: '/getting-started'
@@ -18,22 +18,14 @@ buttons:
 # Author box
 author:
     title: Brought to you by MIDL.dev
-    title_url: 'https://midl.dev/tezos-suite/'
+    title_url: 'https://midl.dev/'
     external_url: true
-    description: A proof-of-stake infrastructure company - we help you bake your XTZ. <a href="https://MIDL.dev/tezos-suite" target="_blank">Learn more</a>.
+    description: A proof-of-stake infrastructure company - we help you stake your DOT. <a href="https://MIDL.dev/" target="_blank">Learn more</a>.
 
 # Grid navigation
 grid_navigation:
-    - title: Mainnet
-      excerpt: Snapshots for the Tezos blockchain (you probably want this).
+    - title: Polkadot
+      excerpt: Snapshots for the Polkadot network
       cta: Download
-      url: 'https://mainnet.xtz-shots.io/'
-    - title: Delphinet
-      excerpt: Test chain for the Delphi protocol upgrade.
-      cta: Download
-      url: 'https://delphinet.xtz-shots.io/'
-    - title: Dalphanet
-      excerpt: Test chain for the future Tezos network after Delphi.
-      cta: Download
-      url: 'https://dalphanet.xtz-shots.io/'
+      url: 'https://dot.polkashots.io/'
 ---
