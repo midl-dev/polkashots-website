@@ -1,0 +1,47 @@
+# Theme settings
+doks:
+    baseurl:
+    color_theme: blue # Available themes: blue (default), green, purple, red and yellow
+    header:
+        logo:
+            text: XTZ-Shots
+            image:
+            logo_url: 'https://xtz-shots.io'
+        nav:
+            - item_name: Mainnet
+              item_url: 'https://mainnet.xtz-shots.io/'
+            - item_name: Delphinet
+              item_url: 'https://delphinet.xtz-shots.io/'
+            - item_name: Dalphanet
+              item_url: 'https://dalphanet.xtz-shots.io/'
+
+    footer:
+        content:
+            logo:
+                text: XTZ-Shots
+                image:
+            copyright: Copyright &copy; 2020. - MIDL.Dev <br>All rights reserved.
+        social_list:
+            - network_name: github
+              profile_url: 'https://github.com/midl-dev'
+            - network_name: twitter
+              profile_url: 'https://twitter.com/midl_dev'
+            - network_name: sphere
+              profile_url: 'https://midl.dev'
+    google_analytics:
+        tracking_code: # Add your Google Analytics tracking code to activate Google Analytics
+    comments:
+        disqus_forum_shortname: # Add your disqus forum shortname to activate comments
+
+# SASS settings
+sass:
+    sass_dir: ./_sass
+    style: :compressed
+
+# Jekyll settings
+layouts_dir: ./_layouts
+includes_dir: ./_includes
+exclude: [ 'README.md', 'CHANGELOG.md' ]
+permalink: /:title/
+
+favicon: '/favicon.ico'
