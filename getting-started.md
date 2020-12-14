@@ -5,7 +5,7 @@ keywords:
 comments: false
 
 # Hero section
-title: About XTZ-shots
+title: About Polkashots
 description: 
 
 # Author box
@@ -13,7 +13,7 @@ author:
     title: Brought to you by MIDL.dev
     title_url: 'https://midl.dev/'
     external_url: true
-    description: A proof-of-stake infrastructure company - we help you validate your DOT. <a href="https://MIDL.dev/polkadot-suite" target="_blank">Learn more</a>.
+    description: A proof-of-stake infrastructure company - we help you validate your DOT. <a href="https://MIDL.dev/polkadot" target="_blank">Learn more</a>.
 
 # Micro navigation
 micro_nav: true
@@ -22,7 +22,7 @@ micro_nav: true
 page_nav:
     home:
         content: Previous page
-        url: 'https://xtz-shots.io/'
+        url: 'https://polkashots.io/'
 ---
 
 ### What is this ?
@@ -31,7 +31,7 @@ page_nav:
 
 This website helps people operating blockchain nodes to synchronize new blockchain nodes, so they are operational faster.
 
-This project was sponsored by a grant from the [polkadot foundation](https://polkadot.foundation/).
+This project was sponsored by a grant from the [Web 3 Foundation](https://web3.foundation/).
 
 ### How to use
 
@@ -40,10 +40,10 @@ We are the first snapshot website to provide **permalinks**: URLs that never cha
 For example, to download a recent full snapshot of polkadot mainnet, simply do:
 
 ```
-wget https://mainnet.xtz-shots.io/full
+wget https://dot.polkashots.io/rocksdb
 ```
 
-More details can be found in the [snapshot page](https://mainnet.xtz-shots.io).
+More details can be found in the [snapshot page](https://mainnet.polkashots.io).
 
 ### How does it work ?
 
@@ -56,7 +56,7 @@ All source code is [open source](https://github.com/midl-dev/polkadot-snapshot-g
 
 We are [MIDL.dev](https://midl.dev), a blockchain infrastructure company.
 
-We maintain the [polkadot Suite](https://midl.dev/polkadot-suite/) of open-source software projects to deploy secure bakers and nodes.
+We maintain a suite of open-source software projects to deploy secure bakers and nodes.
 
 Contact us if you need help with:
 
