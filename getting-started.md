@@ -35,15 +35,15 @@ This project was sponsored by a grant from the [Web 3 Foundation](https://web3.f
 
 ### How to use
 
-We are the first snapshot website to provide **permalinks**: URLs that never change and reliably point to a recent snapshot.
+We provide **permalinks**: URLs that never change and reliably point to a recent snapshot.
 
 For example, to download a recent full snapshot of polkadot mainnet, simply do:
 
 ```
-wget https://dot.polkashots.io/rocksdb
+wget https://dot.polkashots.io/snapshot
 ```
 
-More details can be found in the [snapshot page](https://mainnet.polkashots.io).
+More details can be found in the [snapshot page](https://dot.polkashots.io).
 
 ### How does it work ?
 
@@ -61,8 +61,8 @@ We maintain a suite of open-source software projects to deploy secure bakers and
 Contact us if you need help with:
 
 * becoming a validator
-* deploying your private chain based on polkadot
-* generating snapshots for your private chain
+* deploying a polkadot parachain in the cloud
+* generating snapshots for your parachain
 
 ### Disclaimers
 

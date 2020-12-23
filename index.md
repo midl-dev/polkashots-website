@@ -25,7 +25,11 @@ author:
 # Grid navigation
 grid_navigation:
     - title: Polkadot
-      excerpt: Snapshots for the Polkadot network
+      excerpt: Snapshots for the Polkadot network in new ParityDb format
+      cta: Download
+      url: 'https://dot.polkashots.io/'
+    - title: Polkadot (RocksDb)
+      excerpt: Snapshots for the Polkadot network in RocksDb format
       cta: Download
       url: 'https://dot.polkashots.io/'
 ---
