@@ -5,7 +5,7 @@ keywords:
 
 # Hero section
 title: Polkashots
-description: A repository of Polkadot node snapshots - regularly updated and fast to download from anywhere in the world.
+description: A repository of Polkadot node database snapshots - regularly updated and fast to download from anywhere in the world.
 buttons:
     - content: Learn more
       url: '/getting-started'
