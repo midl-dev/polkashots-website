@@ -41,15 +41,15 @@ We provide snapshots of pre-synced Polkadot databases updated regularly - twice 
 
 They are compressed using the 7z compression algorithm.
 
-In order to fully automate your recovery mechanism, We provide **permalinks**: URLs that never change and reliably point to a recent snapshot.
+In order to fully automate your recovery mechanism, we provide **permalinks**: URLs that never change and reliably point to a recent snapshot.
 
-For example, to download a recent snapshot of polkadot, simply do:
+For example, to download a recent snapshot of polkadot database, simply do:
 
 ```
 wget https://dot.polkashots.io/snapshot
 ```
 
-More detailed instructions can be found in the [snapshot page](https://dot.polkashots.io).
+This link redirects, so if using `curl`, make sure to pass the `-L` parameter to follow http redirects.
 
 ### Database formats
 
