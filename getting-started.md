@@ -27,23 +27,40 @@ page_nav:
 
 ### What is this ?
 
-[polkadot](https://polkadot.com) is a proof-of-stake blockchain.
+[polkadot](https://polkadot.network) is a proof-of-stake blockchain protocol.
 
-This website helps people operating blockchain nodes to synchronize new blockchain nodes, so they are operational faster.
+This website helps people operating polkadot nodes to synchronize new nodes, so they are operational faster.
 
 This project was sponsored by a grant from the [Web 3 Foundation](https://web3.foundation/).
 
 ### How to use
 
-We provide **permalinks**: URLs that never change and reliably point to a recent snapshot.
+When starting a polkadot node for the first time, you must wait for it to sync. The process can take hours or days. Alternatively, if you want a fully synced node faster, you may import a fully synced database.
 
-For example, to download a recent full snapshot of polkadot mainnet, simply do:
+We provide snapshots of pre-synced Polkadot databases updated regularly - twice a day on average.
+
+They are compressed using the 7z compression algorithm.
+
+In order to fully automate your recovery mechanism, We provide **permalinks**: URLs that never change and reliably point to a recent snapshot.
+
+For example, to download a recent snapshot of polkadot, simply do:
 
 ```
 wget https://dot.polkashots.io/snapshot
 ```
 
-More details can be found in the [snapshot page](https://dot.polkashots.io).
+More detailed instructions can be found in the [snapshot page](https://dot.polkashots.io).
+
+### Database formats
+
+Like any [Substrate](https://substrate.dev) chain, Polkadot supports two database backends:
+
+* [RocksDb](https://rocksdb.org/) is the default option,
+* [ParityDb](https://github.com/paritytech/parity-db) is more efficient but also more experimental.
+
+We provide snapshots for both database backends: [RocksDb](https://dot-rocksdb.polkashots.io) and [ParityDb](https://dot.polkashots.io).
+
+These snapshots are **not** archive snapshots. You must run your validator with the `--unsafe-pruning` argument after starting your node from the snapshots provided here. The `--unsafe-pruning` mode is sufficient to run a validator node.
 
 ### How does it work ?
 
