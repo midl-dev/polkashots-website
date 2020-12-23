@@ -31,5 +31,5 @@ grid_navigation:
     - title: Polkadot (RocksDb)
       excerpt: Snapshots for the Polkadot network in RocksDb format
       cta: Download
-      url: 'https://dot.polkashots.io/'
+      url: 'https://dot-rocksdb.polkashots.io/'
 ---
