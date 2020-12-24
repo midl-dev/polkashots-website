@@ -58,7 +58,7 @@ Like any [Substrate](https://substrate.dev) chain, Polkadot supports two databas
 * [RocksDb](https://rocksdb.org/) is the default option,
 * [ParityDb](https://github.com/paritytech/parity-db) is more efficient but also more experimental.
 
-We provide snapshots for both database backends: [RocksDb](https://dot-rocksdb.polkashots.io) and [ParityDb](https://dot.polkashots.io).
+We provide snapshots for both database backends: [RocksDb polkadot snapshots](https://dot-rocksdb.polkashots.io) and [ParityDb polkadot snapshots](https://dot.polkashots.io).
 
 These snapshots are **not** archive snapshots. You must run your validator with the `--unsafe-pruning` argument after starting your node from the snapshots provided here. The `--unsafe-pruning` mode is sufficient to run a validator node.
 
