@@ -70,7 +70,7 @@ We provide snapshots for both database backends: [RocksDb polkadot snapshots](ht
 
 These snapshots are **not** archive snapshots. You must run your validator with the `--unsafe-pruning` argument after starting your node from the snapshots provided here. The `--unsafe-pruning` mode is sufficient to run a validator node.
 
-Substrate has an `export-blocks` and `import-blocks` option, but these snapshots do not use it. Instead, we provide raw database backends because recovery is faster than with the block import function.
+Substrate has an `export-blocks` and `import-blocks` option, but these snapshots do not make use of it. The `import-blocks` function verifies every block, which is as slow as an initial sync. Instead, we provide raw database backend files because setup is faster than with the block import function.
 
 ### How does it work ?
 
