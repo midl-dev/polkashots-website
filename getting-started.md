@@ -51,6 +51,14 @@ wget https://dot.polkashots.io/snapshot
 
 This link redirects, so if using `curl`, make sure to pass the `-L` parameter to follow http redirects.
 
+You must the uncompress this snapshot with the `7z` utility:
+
+```
+7z x <file> -o~/.local/share/polkadot/chains/polkadot
+```
+
+This will create a folder `~/.local/share/polkadot/chains/polkadot/paritydb`.
+
 ### Database formats
 
 Like any [Substrate](https://substrate.dev) chain, Polkadot supports two database backends:
