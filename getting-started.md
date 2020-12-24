@@ -62,6 +62,8 @@ We provide snapshots for both database backends: [RocksDb](https://dot-rocksdb.p
 
 These snapshots are **not** archive snapshots. You must run your validator with the `--unsafe-pruning` argument after starting your node from the snapshots provided here. The `--unsafe-pruning` mode is sufficient to run a validator node.
 
+Substrate has an `export-blocks` and `import-blocks` option, but these snapshots do not use it. Instead, we provide raw database backends because recovery is faster than with the block import function.
+
 ### How does it work ?
 
 The snapshot generation engine is deployed on [Google Kubernetes Engine](https://cloud.google.com/kubernetes-engine).
