@@ -27,9 +27,9 @@ page_nav:
 
 ### What is this ?
 
-[polkadot](https://polkadot.network) is a proof-of-stake blockchain protocol.
+[polkadot](https://polkadot.network) and [kusama](https://kusama.network) are proof-of-stake blockchain protocols.
 
-This website helps people operating polkadot nodes to synchronize new nodes, so they are operational faster.
+This website helps people operating polkadot and kusama nodes to synchronize new nodes, so they are operational faster.
 
 This project was sponsored by a grant from the [Web 3 Foundation](https://web3.foundation/).
 
@@ -37,7 +37,7 @@ This project was sponsored by a grant from the [Web 3 Foundation](https://web3.f
 
 When starting a polkadot node for the first time, you must wait for it to sync. The process can take hours or days. Alternatively, if you want a fully synced node faster, you may import a fully synced database.
 
-We provide snapshots of pre-synced Polkadot databases updated regularly - twice a day on average.
+We provide snapshots of pre-synced Polkadot and Kusama databases updated regularly - twice a day on average.
 
 They are compressed using the 7z compression algorithm.
 
@@ -59,6 +59,12 @@ You must the uncompress this snapshot with the `7z` utility:
 
 This will create a folder `~/.local/share/polkadot/chains/polkadot/paritydb`.
 
+For Kusama, decompress command is:
+
+```
+7z x <file> -o~/.local/share/polkadot/chains/ksmcc3
+```
+
 ### Database formats
 
 Like any [Substrate](https://substrate.dev) chain, Polkadot supports two database backends:
@@ -66,7 +72,11 @@ Like any [Substrate](https://substrate.dev) chain, Polkadot supports two databas
 * [RocksDb](https://rocksdb.org/) is the default option,
 * [ParityDb](https://github.com/paritytech/parity-db) is more efficient but also more experimental.
 
-We provide snapshots for both database backends: [RocksDb polkadot snapshots](https://dot-rocksdb.polkashots.io) and [ParityDb polkadot snapshots](https://dot.polkashots.io).
+We provide Polkadot snapshots for both database backends: [RocksDb polkadot snapshots](https://dot-rocksdb.polkashots.io) and [ParityDb polkadot snapshots](https://dot.polkashots.io).
+
+We also provide [Kusama RocksDb snapshots](http://ksm-rocksdb.polkashots.io).
+
+### Pruning
 
 These snapshots are **not** archive snapshots. You must run your validator with the `--unsafe-pruning` argument after starting your node from the snapshots provided here. The `--unsafe-pruning` mode is sufficient to run a validator node.
 
