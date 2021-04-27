@@ -43,7 +43,9 @@ They are compressed using the 7z compression algorithm.
 
 In order to fully automate your recovery mechanism, we provide **permalinks**: URLs that never change and reliably point to a recent snapshot.
 
-For example, to download a recent snapshot of polkadot database, simply do:
+In the instructions below, we assume that the user is `polkadot` and the home directory is `/home/polkadot`.
+
+To download a recent snapshot of polkadot database, simply do:
 
 ```
 wget https://dot.polkashots.io/snapshot
@@ -51,19 +53,26 @@ wget https://dot.polkashots.io/snapshot
 
 This link redirects, so if using `curl`, make sure to pass the `-L` parameter to follow http redirects.
 
-You must the uncompress this snapshot with the `7z` utility:
+You must the uncompress this snapshot with the `7z` utility. As `polkadot` user, run:
 
 ```
-7z x <file> -o~/.local/share/polkadot/chains/polkadot
+7z x <file> -o/home/polkadot/.local/share/polkadot/chains/polkadot
 ```
 
-This will create a folder `~/.local/share/polkadot/chains/polkadot/paritydb`.
+This will create a folder `/home/polkadot/.local/share/polkadot/chains/polkadot/paritydb`.
 
 For Kusama, decompress command is:
 
 ```
-7z x <file> -o~/.local/share/polkadot/chains/ksmcc3
+7z x <file> -o/home/polkadot/.local/share/polkadot/chains/ksmcc3
 ```
+
+### Video instructions
+
+These intstructional videos explain how to restore from a snapshot:
+
+* [Secure validator - Follow-up #2 - Snapshot](https://www.youtube.com/watch?v=Egbf5biQGNc)
+* [Secure validator - Follow-up #3 - From zero to fully synced](https://www.youtube.com/watch?v=UE6GJGvIur8)
 
 ### Database formats
 
