@@ -31,7 +31,7 @@ page_nav:
 
 This website helps people operating polkadot and kusama nodes to synchronize new nodes, so they are operational faster.
 
-This project was sponsored by a grant from the [Web 3 Foundation](https://web3.foundation/).
+This project was sponsored by a grant from the [Web 3 Foundation](https://web3.foundation/) and is currently funded by the Polkadot and Kusama councils.
 
 ### How to use
 
@@ -72,9 +72,7 @@ Like any [Substrate](https://substrate.dev) chain, Polkadot supports two databas
 * [RocksDb](https://rocksdb.org/) is the default option,
 * [ParityDb](https://github.com/paritytech/parity-db) is more efficient but also more experimental.
 
-We provide Polkadot snapshots for both database backends: [RocksDb polkadot snapshots](https://dot-rocksdb.polkashots.io) and [ParityDb polkadot snapshots](https://dot.polkashots.io).
-
-We also provide [Kusama RocksDb snapshots](http://ksm-rocksdb.polkashots.io).
+We provide [Polkadot RocksDb snapshots](https://dot-rocksdb.polkashots.io) and [Kusama RocksDb snapshots](http://ksm-rocksdb.polkashots.io). We do not currently provide ParityDB snapshots.
 
 ### Pruning
 
