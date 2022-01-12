@@ -39,7 +39,7 @@ When starting a polkadot node for the first time, you must wait for it to sync. 
 
 We provide snapshots of pre-synced Polkadot and Kusama databases updated regularly - twice a day on average.
 
-They are compressed using the 7z compression algorithm.
+They are compressed using the lz4 compression algorithm.
 
 In order to fully automate your recovery mechanism, we provide **permalinks**: URLs that never change and reliably point to a recent snapshot.
 
@@ -53,10 +53,10 @@ wget https://dot.polkashots.io/snapshot
 
 This link redirects, so if using `curl`, make sure to pass the `-L` parameter to follow http redirects.
 
-You must the uncompress this snapshot with the `7z` utility. As `polkadot` user, run:
+You must the uncompress this snapshot with the `lz4` utility. As `polkadot` user, run:
 
 ```
-7z x <file> -o/home/polkadot/.local/share/polkadot/chains/polkadot
+lz4 -c -d <file> | tar -x -C /home/polkadot/.local/share/polkadot/chains/polkadot
 ```
 
 This will create a folder `/home/polkadot/.local/share/polkadot/chains/polkadot/paritydb`.
@@ -64,7 +64,7 @@ This will create a folder `/home/polkadot/.local/share/polkadot/chains/polkadot/
 For Kusama, decompress command is:
 
 ```
-7z x <file> -o/home/polkadot/.local/share/polkadot/chains/ksmcc3
+lz4 -c -d <file> | tar -x -C /home/polkadot/.local/share/polkadot/chains/ksmcc3
 ```
 
 ### Video instructions
