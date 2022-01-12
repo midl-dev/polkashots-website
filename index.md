@@ -28,8 +28,16 @@ grid_navigation:
       excerpt: Snapshots for the Polkadot network in RocksDb format
       cta: Download
       url: 'https://dot-rocksdb.polkashots.io/'
+    - title: Polkadot (Paritydb)
+      excerpt: Snapshots for the Polkadot network in paritydb format
+      cta: Download
+      url: 'https://dot.polkashots.io/'
     - title: Kusama (RocksDb)
       excerpt: Snapshots for the Kusama network in RocksDb format
       cta: Download
       url: 'https://ksm-rocksdb.polkashots.io/'
+    - title: Kusama (Paritydb)
+      excerpt: Snapshots for the Kusama network in paritydb format
+      cta: Download
+      url: 'https://ksm.polkashots.io/'
 ---
