@@ -81,7 +81,7 @@ Like any [Substrate](https://substrate.dev) chain, Polkadot supports two databas
 * [RocksDb](https://rocksdb.org/) is the default option,
 * [ParityDb](https://github.com/paritytech/parity-db) is more efficient but also more experimental.
 
-We provide [Polkadot RocksDb snapshots](https://dot-rocksdb.polkashots.io) and [Kusama RocksDb snapshots](http://ksm-rocksdb.polkashots.io). We do not currently provide ParityDB snapshots.
+We provide Polkadot and Kusama snapshots in both RocksDb and ParityDb formats.
 
 ### Pruning
 
